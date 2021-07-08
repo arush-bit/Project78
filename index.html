@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Project 78</title>
+    </head>
+    <body>
+        <div>
+
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FbRiiJx_transparent-family-vector-png-cartoon-family-png-transparent%2F&psig=AOvVaw2BWoeUnufHdctELt_jBF57&ust=1625839510667000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNDr9rLS0_ECFQAAAAAdAAAAABAD" style="width: 30%;" id="family_member_image">
+
+        <h4 id="family_member_image"></h4>
+
+        <button type="button" onclick="update();">Next</button>
+
+        </div>
+        <script>
+         var image=["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2FbRiiJx_transparent-family-vector-png-cartoon-family-png-transparent%2F&psig=AOvVaw2BWoeUnufHdctELt_jBF57&ust=1625839510667000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNDr9rLS0_ECFQAAAAAdAAAAABAD"]       
+         
+         var name = ["Ranveer Singh","Sonia Singh","Lara Singh","Sushmita Singh"];
+
+         var i = 0;
+
+            function update(){
+             i++;
+             var numbers_of_family_member_in_array = 5
+             if(i>numbers_of_family_member_in_array);
+             {
+                 i = 0;
+             }
+             var updatedimage = images[i];
+             var updatedname = names[i];
+             document.getElementById("family_member_image").src = updatedimage;
+             document.getElementById("family_member_name").src = updatedname;
+            }
+        </script>
+    </body>
+</html>
